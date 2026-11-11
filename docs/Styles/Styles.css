@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace, sans-serif;
+    background-color: #313630;
+    letter-spacing: 1.5px;
+    color: #FFD900;
+    margin: 0;
+}
+
+address {
+    p {
+        color: #F5E663;
+    }
+}
+
+small {
+    color: #F5E663;
+}
+
+a {
+    text-decoration: none;
+    color: #F5E663;
+}
+
+
+
+.box {
+    border-block: 10px solid #FFD900;
+    background-color: #191516;
+    color: #FFD900;
+    padding: 20px;
+}
+
+.box>header h1 {
+    margin-block-end: 0;
+}
+
+.box header {
+    display: flex;
+    -ms-flex-align: center;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin-block-start: 0;
+        color: #F5E663;
+    }
+}
+
+.box header img {
+    inline-size: 8em;
+}
+
+.box nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box>header h2 {
+    margin-block-start: 0;
+}
+
+.box a {
+    color: #FFD900;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.box h1 {
+    font-size: 1.75em;
+}
+
+.box h2 {
+    font-size: 1em;
+    font-style: italic;
+    text-transform: none;
+}
+
+main {
+    padding: 15px;
+}
+
+section {
+    margin-block-end: 3em;
+}
+
+.card>div {
+    border-inline-start: 10px solid #E0001E;
+    padding-inline-start: 20px;
+}
+
+.accentBorder {
+    border: 10px solid #FFD900;
+    box-shadow: 10px 10px 0px 0px #000;
+    padding: 20px;
+    background-color: #191516;
+}
+
+footer {
+    text-align: center;
+}
+
+.textContent img {
+    max-inline-size: 100%;
+    width: auto;
+}
+
+a:hover {
+    color: #c0001e;
+}
+
+a:active {
+    color: #E0001E;
+}
+
+.card {
+    container-type: inline-size;
+    container-name: card;
+}
+
+.accentBorderFlavours {
+    border: 10px solid #FFD900;
+    box-shadow: 10px 10px 0px 0px #000;
+    padding: 20px;
+    background-color: #191516;
+}
+
+@container card (min-width: 700px) {
+    .card img {
+        inline-size: calc(40cqi - 40px);
+    }
+
+    .textContent img {
+        max-inline-size: 100%;
+        height: auto;
+        max-width: 20%;
+    }
+
+    .card>div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card h2 {
+        margin-block-start: 0;
+    }
+
+    .accentBorderFlavours {
+        border: 10px solid #FFD900;
+        box-shadow: 10px 10px 0px 0px #000;
+        padding: 20px;
+        background-color: #191516;
+
+        img {
+            max-inline-size: 100%;
+            height: auto;
+            max-width: 20%;
+            min-width: 300px;
+        }
+    }
+}
+
+nav ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .textContent img {
+        max-inline-size: 100%;
+        height: auto;
+        max-width: 15%;
+    }
+
+    .box nav {
+        inline-size: 55vi;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    main {
+        inline-size: 80vi;
+        margin-inline: auto;
+    }
+
+    footer>div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer nav {
+        text-align: left;
+    }
+
+    footer address {
+        text-align: right;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .accentBorderFlavours {
+        border: 10px solid #FFD900;
+        box-shadow: 10px 10px 0px 0px #000;
+        padding: 20px;
+        background-color: #191516;
+
+        img {
+            max-inline-size: 100%;
+            height: auto;
+            max-width: 20%;
+            min-width: 300px;
+        }
+    }
+}
+
+.accentBorderSoldiers {
+    background-image: url("../Styles/Images/helldivers\ background\ image.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #FFD900;
+    box-shadow: 10px 10px 0px 0px #000;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-size: 0.7em;
+    opacity: 0.8;
+}
